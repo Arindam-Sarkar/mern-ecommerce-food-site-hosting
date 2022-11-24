@@ -25,7 +25,7 @@ app.use("/api/order/", orderRouter)
 
 
 app.get('/', (req, res) => {
-  res.json("Hello")
+  res.status(200).send("Hello")
 })
 
 app.use(sendErrorResponse)
